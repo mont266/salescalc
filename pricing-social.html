@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <title>Talisman Webs | Sales Team Pricing Calc</title>
+  <meta name="description" content="Talisman Webs Sales Calc - Sales Platform">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/calc.css">
+  <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body><div id="top"></div>
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+
+  <section id="header" class="bg-color0">
+    <div class="container"><div class="row">
+
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+
+      <div class="col-sm-12 mainmenu_wrap"><div class="main-menu-icon visible-xs"><span></span><span></span><span></span></div>
+      <ul id="mainmenu" class="nav menu sf-menu responsive-menu superfish">
+        <li class="">
+          <a href="index.html">Quote Calculator</a>
+        </li>
+      </ul>
+    </div>
+      
+    </div></div>
+</section>
+
+<div class="wrapper">
+  <h1>Social Media Page Pricing</h1>
+  <p>Pricing Calculator for a social media page.</p>
+</div> 
+<br>
+<br>
+<section id="middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+      </div>
+      <div id="calcu" class="calc">
+        <form name="Social Calculator" action="#middle">
+          <div class="form-group">
+            <label for="websiteType" title="Website Type">Website/Service Type</label>
+            <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
+              <option value="Select">Social Media Page</option>
+              <option value="pricing.html">Full Website</option>
+              <option value="pricing-landingpage.html">Landing Page</option>
+              <option value="pricing-accommodation.html">Accommodation Website</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="facebook" title="Do You Need A Facebook Page For Your Business?">Do You Need A Facebook Page?</label>
+            <select id="facebook" class="form-control" name="txtFacebook">
+              <option value="Select">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="twitter" title="Do You Need A Twitter Page For Your Business?">Do You Need A Twitter Page?</label>
+            <select id="twitter" class="form-control" name="txtTwitter">
+              <option value="Select">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
+
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-group">
+            <label id="initResult"> </label><br>
+            <p id="error"></p>
+
+            </div>
+          <div class="form-group">
+            <input class="btn btn-primary" type="Submit" value="Calculate" onclick="calculate4()">
+         </div>
+        </form>
+    </div>
+    </div>
+
+    <!--//COMING SOON! DO NOT TOUCH
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="page-title">Mobile Apps</h1>
+      </div>
+    </div>
+    <div class="row">
+
+    <div class="col-sm-6">
+
+      <div class="left_icons">
+        <div class="dxsingle_teaser_left">
+            <i class="dx-icon-paperplane-2"></i>
+        </div>
+        <div class="dxsingle_teaser_right">
+            <h3><a href="#">Flights</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+        </div>
+      </div>
+
+      <div class="left_icons">
+        <div class="dxsingle_teaser_left">
+            <i class="dx-icon-earth-3"></i>
+        </div>
+        <div class="dxsingle_teaser_right">
+            <h3><a href="#">Cruises</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+        </div>
+      </div>  
+
+    </div>
+
+    <div class="col-sm-6">
+      <div class="left_icons">
+        <div class="dxsingle_teaser_left">
+            <i class="dx-icon-home"></i>
+        </div>
+        <div class="dxsingle_teaser_right">
+            <h3><a href="#">Hotels</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+        </div>
+      </div>
+
+      <div class="left_icons">
+        <div class="dxsingle_teaser_left">
+            <i class="dx-icon-brightness"></i>
+        </div>
+        <div class="dxsingle_teaser_right">
+            <h3><a href="#">Vacations</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+        </div>
+      </div>        
+    </div>
+
+    </div>-->
+  </div>
+</section>
+
+<section id="copyright" class="dark_section">
+  <div class="container"><div class="row">
+    
+    <div class="col-sm-12"><p class="text-center">&copy; Copyright 2021. <a href="http://www.talismanwebs.com">Talisman Webs</a></p></div>
+
+  </div></div>
+</section>
+  
+        <script src="js/vendor/respond.min.js"></script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/hoverIntent.js"></script>
+        <script src="js/vendor/superfish.js"></script>
+        <script src="js/vendor/jquery.actual.min.js"></script>
+        <script src="js/vendor/jquery.elastislide.js"></script>
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
+        <script src="js/vendor/jquery.prettyPhoto.js"></script>
+        <script src="js/vendor/jquery.easing.1.3.js"></script>
+        <script src="js/vendor/jquery.ui.totop.js"></script>
+        <script src="js/vendor/jquery.isotope.min.js"></script>
+        <script src="js/vendor/jquery.easypiechart.min.js"></script>
+        <script src='js/vendor/jflickrfeed.min.js'></script>
+        <!--<script src="js/vendor/jquery.sticky.js"></script>
+        <script src='js/vendor/jquery.scrollTo-min.js'></script>
+        <script src='js/vendor/jquery.localscroll-min.js'></script>-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/calculator.js"></script>
+     
+     <script>
+
+        // jQuery Version
+        // $("#my-form").submit(function(e) {
+        //   e.preventDefault();
+  
+        //   var $form = $(this);
+        //   $.post($form.attr("action"), $form.serialize()).then(function() {
+        //     alert("Thank you!");
+        //   });
+        // });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        let testForm = document.querySelector("#middle form");
+        
+        testForm.addEventListener('submit', e => {
+          e.preventDefault();
+  
+          const formData = new FormData(testForm);
+          fetch(testForm.getAttribute('action'), {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            },
+            body: new URLSearchParams(formData).toString()
+          })
+          .then(res => {
+            if (res) {
+              M.toast({
+                html: 'Thank you for your submission!',
+                classes: 'pulse'
+              });
+            }
+          });
+        });
+      
+      </script>
+    
+    </body>
+</html>
