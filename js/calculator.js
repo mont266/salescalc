@@ -175,6 +175,9 @@ function calculate1() {
 
     deposit = initRes / 2;
 
+    if (resYearly < 0) {
+        resYearly = 0;
+    }
 
     document.getElementById("initResult").innerHTML = "Full Payment: £ " + initRes + " + ";
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
@@ -310,6 +313,10 @@ function calculate2() {
     }
 
     deposit = initRes / 2;
+
+    if (resYearly < 0) {
+        resYearly = 0;
+    }
 
     document.getElementById("initResult").innerHTML = "Full Payment: £ " + initRes + " + ";
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
@@ -521,6 +528,10 @@ function calculate3() {
     }
 
     deposit = initRes / 2;
+
+    if (resYearly < 0) {
+        resYearly = 0;
+    }
 
     document.getElementById("initResult").innerHTML = "Full Payment: £ " + initRes + " + ";
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
