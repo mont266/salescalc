@@ -43,7 +43,6 @@ function calculate1() {
     var resMonthly;
     var resYearly;
     var deposit;
-    var savings;
 
     pageQty = (document.pricingcalc.txtPages.value);
 
@@ -145,32 +144,22 @@ function calculate1() {
     //0%
     if (document.getElementById("discount").value == "0") {
         initRes = initRes;
-        savings = 0;
-        document.getElementById("savings").innerHTML = "";
     }
     //5%
     if (document.getElementById("discount").value == "5") {
         initRes = initRes * 0.95;
-        savings = initRes * 0.05;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //10%
     if (document.getElementById("discount").value == "10") {
         initRes = initRes * 0.90;
-        savings = initRes * 0.10;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //15%
     if (document.getElementById("discount").value == "15") {
         initRes = initRes * 0.85;
-        savings = initRes * 0.15;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //20%
     if (document.getElementById("discount").value == "20") {
         initRes = initRes * 0.80;
-        savings = initRes * 0.20;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
 
     deposit = initRes / 2;
@@ -217,7 +206,6 @@ function calculate2() {
     var resMonthly;
     var resYearly;
     var deposit;
-    var savings;
 
     if (document.getElementById("analyticsSupport").value == "Yes") {
         analyticsQty = 1;
@@ -284,32 +272,22 @@ function calculate2() {
     //0%
     if (document.getElementById("discount").value == "0") {
         initRes = initRes;
-        savings = 0;
-        document.getElementById("savings").innerHTML = "";
     }
     //5%
     if (document.getElementById("discount").value == "5") {
         initRes = initRes * 0.95;
-        savings = initRes * 0.05;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //10%
     if (document.getElementById("discount").value == "10") {
         initRes = initRes * 0.90;
-        savings = initRes * 0.10;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //15%
     if (document.getElementById("discount").value == "15") {
         initRes = initRes * 0.85;
-        savings = initRes * 0.15;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //20%
     if (document.getElementById("discount").value == "20") {
         initRes = initRes * 0.80;
-        savings = initRes * 0.20;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
 
     deposit = initRes / 2;
@@ -355,7 +333,6 @@ function calculate3() {
     var liveChatRes;
     var creditRes;
     var mainRes;
-    var savings;
 
     var initRes;
     var resMonthly;
@@ -499,32 +476,22 @@ function calculate3() {
     //0%
     if (document.getElementById("discount").value == "0") {
         initRes = initRes;
-        savings = 0;
-        document.getElementById("savings").innerHTML = "";
     }
     //5%
     if (document.getElementById("discount").value == "5") {
         initRes = initRes * 0.95;
-        savings = initRes * 0.05;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //10%
     if (document.getElementById("discount").value == "10") {
         initRes = initRes * 0.90;
-        savings = initRes * 0.10;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //15%
     if (document.getElementById("discount").value == "15") {
         initRes = initRes * 0.85;
-        savings = initRes * 0.15;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
     //20%
     if (document.getElementById("discount").value == "20") {
         initRes = initRes * 0.80;
-        savings = initRes * 0.20;
-        document.getElementById("savings").innerHTML = "Client Saves: £" + savings + " with discount";
     }
 
     deposit = initRes / 2;
