@@ -15,6 +15,7 @@ function calculate1() {
     var mainLow = 10.00;
     var mainMed = 15.00;
     var mainHigh = 25.00;
+    var cmsCost = 20.00;
 
     var pageQty;
     var contentQty;
@@ -26,6 +27,7 @@ function calculate1() {
     var ecommerceQty;
     var ecommerceMonQty;
     var creditQty;
+    var cmsQty;
 
     var pageRes;
     var contentRes;
@@ -38,6 +40,7 @@ function calculate1() {
     var ecommerceMonRes;
     var creditRes;
     var mainRes;
+    var cmsRes;
 
     var initRes;
     var resMonthly;
@@ -114,6 +117,13 @@ function calculate1() {
         ecommerceMonQty = 0;
     }
 
+    //CMS Support
+    if (document.getElementById("cmsSupport").value == "Yes") {
+        cmsQty = 1;
+    } else {
+        cmsQty = 0;
+    }
+
     //Credit Discount
     if (document.getElementById("creditSupport").value == "Yes") {
         creditQty = 1;
@@ -131,11 +141,12 @@ function calculate1() {
     ecommerceRes = ecommerceCost * ecommerceQty;
     ecommerceMonRes = ecommerceMonCost * ecommerceMonQty;
     creditRes = creditDisc * creditQty;
+    cmsRes = cmsCost * cmsQty;
     
 
 
 
-    initRes = websiteCost + pageRes + contentRes + blogRes + analyticsRes + hostRes + liveChatRes + ecommerceRes + domainRes - creditRes;
+    initRes = websiteCost + pageRes + contentRes + blogRes + cmsRes + analyticsRes + hostRes + liveChatRes + ecommerceRes + domainRes - creditRes;
     resMonthly = hostRes + mainRes + ecommerceMonRes;
     resYearly = resMonthly * 12 - 12;
     
